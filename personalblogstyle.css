@@ -1,0 +1,226 @@
+body {
+  background-color: #dad717;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 480px 1000px;
+  grid-template-rows: 150px;
+  grid-template-areas: "bl bl bl bl lt lt lt lt";
+  align-content: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #e1e1e1;
+  padding: 20px 20px;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  font-size: large;
+  gap: 25px;
+  justify-content: flex-end;
+  align-items: center;
+  height: 300px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #212022;
+  font-size: larger;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  background-color: #dc1b1b;
+}
+.navbar h1 {
+  color: #dc1b1b;
+  font-size: 45px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navbar img {
+  display: flex;
+  width: 280px;
+  height: 280px;
+  align-items: end;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  padding: 0.5rem;
+  border: 2px solid #edd7d7;
+}
+
+.css-button-shadow-border-sliding--red {
+  min-width: 115px;
+  height: 30px;
+  color: #fff;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #d90429;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--red:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.css-button-shadow-border-sliding--red:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #ccc1c2;
+  right: 0;
+}
+
+.css-button-shadow-border-sliding--red:active {
+  top: 2px;
+}
+
+.container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+  font-size: larger;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 90px 600px 300px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sb sb sb sb ct ct ct ct"
+    "ft ft ft ft ft ft ft ft";
+}
+
+.container2 {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: medium;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 90px 600px 200px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "ct ct ct ct sb sb sb sb"
+    "ft ft ft ft ft ft ft ft";
+}
+
+.box {
+  width: 100%;
+  border: 1px solid black;
+  background: #08b0cd;
+}
+.header {
+  grid-area: hd;
+}
+.content {
+  grid-area: ct;
+  background-image: url("Motobiker.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sidebar {
+  grid-area: sb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar img {
+    display: flex;
+    width: 370px;
+    height: 330px;
+}
+
+.footer {
+  grid-area: ft;
+  background: none;
+  border: none;
+}
+
+.heading {
+  text-align: justify;
+  color: rgb(221, 221, 223);
+}
+
+div.wrapper {
+  display: grid;
+  row-gap: 10px;
+  background: none;
+  margin-top: 70px;
+  justify-content: space-evenly;
+  grid-template-rows: auto;
+}
+
+.wrapper .box {
+  background-color: #cdd2cc;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 110%;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 10px;
+}
+.wrapper a {
+  color: #ed1f37;
+}
+.a {
+  grid-column: col 1 / span 2;
+  grid-row: row 1;
+  width: 210px;
+}
+.b {
+  grid-column: col 2 / span 2;
+  grid-row: row 1;
+  width: 210px;
+}
+.c {
+  grid-column: col 3 / span 2;
+  grid-row: row 1;
+  width: 210px;
+}
+.g {
+  grid-column: col 4 / span 2;
+  grid-row: row 1;
+  width: 210px;
+}
+.d {
+  grid-column: col 1 / span 2;
+  grid-row: row 2;
+  width: 210px;
+}
+.e {
+  grid-column: col 2 / span 2;
+  grid-row: row 2;
+  width: 210px;
+}
+.f {
+  grid-column: col 3 / span 2;
+  grid-row: row 2;
+  width: 210px;
+}
+.h {
+  grid-column: col 4 / span 2;
+  grid-row: row 2;
+  width: 210px;
+}
