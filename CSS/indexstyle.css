@@ -1,89 +1,4 @@
-.navbar {
-  display: grid;
-  grid-template-columns: 620px 1000px;
-  grid-template-rows: 150px;
-  grid-template-areas: "bl bl bl bl lt lt lt lt";
-  align-content: center;
-  justify-content: space-between;
-  border-bottom: 1.5px solid #e1e1e1;
-  padding: 20px 20px;
-  align-items: center;
-}
-.navbar ul {
-  display: flex;
-  list-style: none;
-  font-size: large;
-  gap: 25px;
-  justify-content: flex-end;
-  align-items:center;
-  height: 300px;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #212022;
-  font-size: larger;
-  padding: 10px;
-}
-.navbar ul li a:hover {
-  background-color: #dc1b1b;
-}
-.navbar h1 {
-  color: #dc1b1b;
-  font-size: 55px;
-  font-family: 'Courier New', Courier, monospace
-}
-.navbar img {
-  display: flex;
-  width: 280px;
-  height: 280px;
-  align-items: end;
-}
-.btn {
-  text-decoration: none;
-  font-size: 25px;
-  text-align: center;
-  padding: 0.5rem;
-  border: 2px solid #edd7d7;
-}
-.buttonshadowred{
-  min-width: 115px;
-  height: 30px;
-  color: #fff;
-  padding: 10px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  background: #d90429;
-  z-index: 1;
-}
-.buttonshadowred:hover:after {
-  width: 100%;
-  left: 0;
-}
-.buttonshadowred:after {
-  border-radius: 5px;
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  z-index: -1;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  background-color: #ccc1c2;
-  right: 0;
-}
-.buttonshadowred:active {
-  top: 2px;
-}
+@import url(./navbarlinks.css);
 body {
   background-color: #dad717;
   height: 100vh;
@@ -99,12 +14,12 @@ body {
   margin-top: 100px;
   text-align: center;
   font-size: larger;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: auto;
   grid-template-rows: 140px 600px 300px;
   grid-template-areas:
-    "hd hd hd hd hd hd hd hd"
-    "sb sb sb sb ct ct ct ct"
-    "ft ft ft ft ft ft ft ft";
+    "hd hd"
+    "sb ct" 
+    "ft ft";
 }
 .box {
   width: 100%;
@@ -119,14 +34,14 @@ body {
 }
 .sidebar {
   grid-area: sb;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-    border: 2px solid rgb(15, 15, 152);
-    padding: 10px;
-    margin: 0px;
-    box-shadow: 5px 5px 5px  #100f0f;
-    background: #08b0cd;
-    border-radius: 25px;
+  border: 2px solid rgb(15, 15, 152);
+  padding: 15px;
+  margin: 0px;
+  box-shadow: 5px 5px 5px  #100f0f;
+  background: #08b0cd;
 }
 .sidebar a:hover {
     background-color: #131313;
@@ -137,10 +52,20 @@ body {
     border: 5px dotted rgb(225, 223, 223);
     width: 480px;
     height:56px;
-    margin-left: auto;
     font-size: 35px;
     font-family:'Courier New', Courier, monospace;
   }  
+h3{
+    color: #212020;
+    margin: 10px 0px;
+  }
+.sidebar li a{
+    list-style: none;
+    border: 5px solid rgb(223, 223, 230);
+    padding: 2px;
+    margin: 5px;
+    width: 280px;
+  }
 .fact{
     font-style: italic;
     font-weight: bold;
@@ -148,28 +73,6 @@ body {
     padding: 2px;
     margin: 2px;
     width: 280px;
-  }
-h3{
-    color: #212020;
-    margin: 10px 0px;
-  }
-.sidebar ul{
-    list-style: none;
-    border: 5px solid rgb(223, 223, 230);
-    padding: 2px;
-    margin: auto;
-    width: 280px;
-    text-align: center ;
-  }
-.description{
-    border: none;
-    padding: 2px;
-    margin: auto;
-  }     
-.textborder{
-    padding: 0px;
-    width: 600px; 
-    height: 80px;
   }  
 .sidebar img {
     width: 440px;
@@ -179,15 +82,26 @@ h3{
 }
 .content {
   grid-area: ct;
-  background-image: url("./photos/Motobiker.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 5px 5px 5px #100f0f;
+  background: none;
+  border: hidden;
 }
+
 .footer {
   grid-area: ft;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
   background: none;
   border: none;
+}
+.footer-header{
+  font-style: italic;
+  font-weight:bold;
+  margin-top: 40px;
+  color: rgb(16, 15, 15);
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace
 }
 .footer ul{
   display: flex;
@@ -203,20 +117,15 @@ h3{
   height: 40px;
 }
 div.wrapper {
-  display: grid;
+  display: flex;
   row-gap: 10px;
+  column-gap: 0px;
   background: none;
   margin-top: 70px;
-  justify-content: space-evenly;
+  justify-content: center;
   grid-template-rows: auto;
-}
-.footer section{
-  font-size: larger;
-  font-style: italic;
-  font-weight:bold;
-  color: rgb(16, 15, 15);
-  font-size: 35px;
-  font-family: 'Courier New', Courier, monospace
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 .wrapper .box {
   background-color: #cdd2cc;
@@ -229,6 +138,9 @@ div.wrapper {
 }
 .wrapper a {
   color: #dc1b1b;
+}
+.wrapper a:hover {
+  color: #2b2626;
 }
 .a {
   grid-column: col 1 / span 2;
