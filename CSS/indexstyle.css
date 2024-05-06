@@ -48,7 +48,7 @@ body {
   padding: 0.5rem;
   border: 2px solid #edd7d7;
 }
-.buttonshadowred:{
+.buttonshadowred{
   min-width: 115px;
   height: 30px;
   color: #fff;
@@ -129,7 +129,7 @@ body {
     font-weight: bold;
     color:#e9f2ec
   }
-  .feature {
+.feature {
     border: 5px dotted rgb(225, 223, 223);
     width: 480px;
     height:56px;
@@ -137,7 +137,7 @@ body {
     font-size: 35px;
     font-family:'Courier New', Courier, monospace;
   }  
-  .fact{
+.fact{
     font-style: italic;
     font-weight: bold;
     border: none;
@@ -145,11 +145,11 @@ body {
     margin: 2px;
     width: 280px;
   }
-  h3{
+h3{
     color: #212020;
     margin: 10px 0px;
   }
-  .sidebar ul{
+.sidebar ul{
     list-style: none;
     border: 5px solid rgb(223, 223, 230);
     padding: 2px;
@@ -157,12 +157,12 @@ body {
     width: 280px;
     text-align: center ;
   }
-  .description{
+.description{
     border: none;
     padding: 2px;
     margin: auto;
   }     
-  .textborder{
+.textborder{
     padding: 0px;
     width: 600px; 
     height: 80px;
@@ -175,7 +175,7 @@ body {
 }
 .content {
   grid-area: ct;
-  background-image: url("Motobiker.jpg");
+  background-image: url("./photos/Motobiker.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 5px 5px 5px #100f0f;
