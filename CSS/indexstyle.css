@@ -66,7 +66,6 @@ body {
   background: #d90429;
   z-index: 1;
 }
-
 .buttonshadowred:hover:after {
   width: 100%;
   left: 0;
@@ -88,7 +87,6 @@ body {
 .buttonshadowred:active {
   top: 2px;
 }
-
 .container {
   display: grid;
   gap: 60px;
