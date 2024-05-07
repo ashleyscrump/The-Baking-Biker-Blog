@@ -2,16 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Orders Page</title>
+    <title>Signup Page</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="./css/aboutstyle.css" />
-    <link rel="stylesheet" href="./css/aboutscreensizestyle.css" />
+    <link rel="stylesheet" href="./css/signupstyle.css" />
   </head>
   <body>
     <div class="container">
-      <div class="header box">Coming Soon</div>
-      <div class="feature box">Feature Content</div>
-      
+      <div class="header"><h1>Let's Ride and Eat!</h1></div>
+      <h2>Enter Your Name and Email</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+
       <div class="footer box">
         <a href="index.html">Return to Home</a>
       </div>
