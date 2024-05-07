@@ -1,115 +1,118 @@
 .navbar {
-    display: grid;
-    grid-template-columns: 620px 1000px;
-    grid-template-rows: 150px;
-    grid-template-areas: "bl bl bl bl lt lt lt lt";
-    align-content: center;
-    justify-content: space-between;
-    border-bottom: 1.5px solid #e1e1e1;
-    padding: 20px 20px;
-    align-items: center;
-  }
-  .navbar-header h1 {
-    color: #dc1b1b;
-    font-size: 55px;
-    font-family: 'Courier New', Courier, monospace
-  }
-  .navbar ul {
-    display: flex;
-    list-style: none;
-    font-size: large;
-    gap: 25px;
-    justify-content: flex-end;
-    align-items:center;
-    height: 300px;
-  }
-  .navbar a {
-    text-decoration: none;
-    color: #212022;
-    font-size: larger;
-    font-weight: bold;
-    padding: 10px;
-  }
-  .navbar li a:hover {
-    background-color: #dc1b1b;
-  }
-  .navbar img {
-    display: flex;
-    width: 280px;
-    height: 280px;
-    align-items: end;
-  }
-  .btn {
-    text-decoration: none;
-    font-size: 25px;
-    text-align: center;
-    padding: 0.5rem;
-    border: 2px solid #edd7d7;
-  }
-  .buttonshadowred{
-    min-width: 115px;
-    height: 30px;
-    padding: 10px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-    background: #d90429;
-    z-index: 1;
-  }
-  .buttonshadowred:hover:after {
-    width: 100%;
-    left: 0;
-  }
-  .buttonshadowred:after {
-    border-radius: 5px;
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    z-index: -1;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    background-color: #ccc1c2;
-    right: 0;
-  }
-  .buttonshadowred:active {
-    top: 2px;
-  }
+  display: grid;
+  grid-template-columns: 620px 1000px;
+  grid-template-rows: 150px;
+  grid-template-areas: "bl bl bl bl lt lt lt lt";
+  align-content: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #e1e1e1;
+  padding: 20px 20px;
+  align-items: center;
+}
+.navbar-header h1 {
+  color: #dc1b1b;
+  font-size: 55px;
+  font-family: "Courier New", Courier, monospace;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-size: large;
+  gap: 25px;
+  justify-content: flex-end;
+  align-items: center;
+  height: 300px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #212022;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 6px;
+}
+.navbar li a:hover {
+  background-color: #dc1b1b;
+}
+.navbar img {
+  display: flex;
+  width: 280px;
+  height: 280px;
+  align-items: end;
+}
+.btn {
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  padding: 0.5rem;
+  border: 2px solid #edd7d7;
+}
+.buttonshadowred {
+  min-width: 115px;
+  height: 30px;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #d90429;
+  z-index: 1;
+}
+.buttonshadowred:hover:after {
+  width: 100%;
+  left: 0;
+}
+.buttonshadowred:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #ccc1c2;
+  right: 0;
+}
+.buttonshadowred:active {
+  top: 2px;
+}
 
-.container{
-    display: grid;
-    border: none;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 100px 350px 600px 100px;
-    grid-template-areas: 
+.container {
+  display: grid;
+  border: none;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px 350px 600px 100px;
+  grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "feat feat feat feat feat feat feat feat"
     "main main main main main main main main"
     "ft ft ft ft ft ft ft ft";
 }
 
-.box{
-    border: 1px solid red;
-    background: rgb(238, 228, 235);
+.box {
+  border: 1px solid red;
+  background: rgb(238, 228, 235);
 }
-.header{
-    grid-area: hd;
+.header {
+  grid-area: hd;
 }
-.footer{
-    grid-area: ft;
+.footer {
+  grid-area: ft;
 }
-.feature{
-    grid-area: feat;
+.feature {
+  grid-area: feat;
 }
-.content{
-    grid-area: main;
+.content {
+  grid-area: main;
 }

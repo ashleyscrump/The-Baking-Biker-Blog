@@ -1,0 +1,78 @@
+
+body {
+    background-color: #f0d1df;
+    height: 100vh;
+    margin: 5px;
+    padding: 5px;
+  }
+.container {
+    display: grid;
+    border: none;
+    background: none;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 120px 510px 100px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "feat feat feat feat feat feat feat feat"
+      "ft ft ft ft ft ft ft ft";
+  }
+  
+  .box {
+    border: 1px solid rgb(24, 24, 24);
+    background: rgb(238, 228, 235);
+  }
+  .header {
+    grid-area: hd;
+    font-size: 70px;
+  font-family: "Courier New", Courier, monospace;
+  color: #dc1b1b;
+  border:none;
+  background: none;
+  }
+  .feature {
+    grid-area: feat;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+.wrap {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some margin to create space for the text */
+  }
+.container p{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .footer {
+    grid-area: ft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    background: none;
+    border: none;
+  }
+  .footer-header {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 40px;
+    color: rgb(16, 15, 15);
+    font-size: 35px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .footer ul {
+    display: flex;
+    list-style: none;
+    font-size: large;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .footer img {
+    width: 40px;
+    height: 40px;
+  }
+  
+ 

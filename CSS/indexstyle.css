@@ -1,4 +1,7 @@
 @import url(./navbarlinks.css);
+@import url(./featurepage.css);
+@import url(./stylescreensize.css);
+
 body {
   background-color: #dad717;
   height: 100vh;
@@ -18,7 +21,7 @@ body {
   grid-template-rows: 140px 600px 300px;
   grid-template-areas:
     "hd hd"
-    "sb ct" 
+    "sb ct"
     "ft ft";
 }
 .box {
@@ -40,45 +43,45 @@ body {
   border: 2px solid rgb(15, 15, 152);
   padding: 15px;
   margin: 0px;
-  box-shadow: 5px 5px 5px  #100f0f;
+  box-shadow: 5px 5px 5px #100f0f;
   background: #08b0cd;
 }
 .sidebar a:hover {
-    background-color: #131313;
-    font-weight: bold;
-    color:#e9f2ec
-  }
+  background-color: #131313;
+  font-weight: bold;
+  color: #e9f2ec;
+}
 .feature {
-    border: 5px dotted rgb(225, 223, 223);
-    width: 480px;
-    height:56px;
-    font-size: 35px;
-    font-family:'Courier New', Courier, monospace;
-  }  
-h3{
-    color: #212020;
-    margin: 10px 0px;
-  }
-.sidebar li a{
-    list-style: none;
-    border: 5px solid rgb(223, 223, 230);
-    padding: 2px;
-    margin: 5px;
-    width: 280px;
-  }
-.fact{
-    font-style: italic;
-    font-weight: bold;
-    border: none;
-    padding: 2px;
-    margin: 2px;
-    width: 280px;
-  }  
+  border: 5px dotted rgb(225, 223, 223);
+  width: 480px;
+  height: 56px;
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+}
+h3 {
+  color: #212020;
+  margin: 5px 0px;
+}
+.sidebar li a {
+  list-style: none;
+  border: 5px solid rgb(223, 223, 230);
+  padding: 2px;
+  margin: 5px;
+  width: 280px;
+}
+.fact {
+  font-style: italic;
+  font-weight: bold;
+  border: none;
+  padding: 2px;
+  margin: 2px;
+  width: 280px;
+}
 .sidebar img {
-    width: 440px;
-    height: 330px;
-    border-radius: 25px;
-    margin-top: 15px;
+  width: 440px;
+  height: 330px;
+  border-radius: 25px;
+  margin-top: 15px;
 }
 .content {
   grid-area: ct;
@@ -95,24 +98,24 @@ h3{
   background: none;
   border: none;
 }
-.footer-header{
+.footer-header {
   font-style: italic;
-  font-weight:bold;
+  font-weight: bold;
   margin-top: 40px;
   color: rgb(16, 15, 15);
   font-size: 35px;
-  font-family: 'Courier New', Courier, monospace
+  font-family: "Courier New", Courier, monospace;
 }
-.footer ul{
+.footer ul {
   display: flex;
   list-style: none;
   font-size: large;
   gap: 25px;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   height: 100px;
 }
-.footer img{
+.footer img {
   width: 40px;
   height: 40px;
 }
@@ -182,4 +185,3 @@ div.wrapper {
   grid-row: row 2;
   width: 210px;
 }
-
