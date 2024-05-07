@@ -1,6 +1,9 @@
 @import url(./navbarlinks.css);
-/*@import url(./featurepage.css);*/
 @import url(./stylescreensize.css);
+@import url(./aboutstyle.css);
+@import url(./aboutscreensizestyle.css);
+@import url(./featurepage.css);
+@import url(./signupstyle.css);
 
 body {
   background-color: #dad717;
