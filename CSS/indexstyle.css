@@ -1,9 +1,9 @@
 @import url(./navbarlinks.css);
-@import url(./stylescreensize.css);
-@import url(./aboutstyle.css);
+/*@import url(./stylescreensize.css);
+@import url(./aboutstyle.css);*/
 @import url(./aboutscreensizestyle.css);
-@import url(./featurepage.css);
-@import url(./signupstyle.css);
+/*@import url(./featurepage.css);
+@import url(./signupstyle.css);*/
 
 body {
   background-color: #dad717;
@@ -13,25 +13,31 @@ body {
 }
 .container {
   display: grid;
-  gap: 60px;
+  gap: 37px 0px;
   width: 90%;
-  height: 100%;
+  height: 90%;
   margin: auto;
   margin-top: 100px;
   text-align: center;
   font-size: larger;
   grid-template-columns: auto;
-  grid-template-rows: 140px 600px 300px;
+  grid-template-rows: 100px 140px 600px 275px;
   grid-template-areas:
-    "hd hd"
-    "sb ct"
-    "ft ft";
+  "nb nb"  
+  "hd hd"
+  "sb ct"
+  "ft ft";
+}
+.navbar{
+  grid-area: nb;
+  width: 90%;
 }
 .box {
   width: 100%;
   border: 1px solid black;
   background: #08b0cd;
 }
+
 .header {
   grid-area: hd;
   border: none;
@@ -42,6 +48,7 @@ body {
   grid-area: sb;
   display: flex;
   flex-direction: column;
+  width:90%;
   align-items: center;
   border: 2px solid rgb(15, 15, 152);
   padding: 15px;
@@ -82,12 +89,13 @@ h3 {
 }
 .sidebar img {
   width: 440px;
-  height: 330px;
+  height: 335px;
   border-radius: 25px;
   margin-top: 15px;
 }
 .content {
   grid-area: ct;
+  width: 90%;
   background: none;
   border: hidden;
 }
@@ -95,6 +103,7 @@ h3 {
 .footer {
   grid-area: ft;
   display: flex;
+  width: 90%;
   flex-direction: column;
   align-items: center;
   margin-top: 45px;
@@ -106,7 +115,6 @@ h3 {
   font-weight: bold;
   margin-top: 40px;
   color: rgb(16, 15, 15);
-  font-size: 35px;
   font-family: "Courier New", Courier, monospace;
 }
 .footer ul {
@@ -122,14 +130,16 @@ h3 {
   width: 40px;
   height: 40px;
 }
+.container p{
+  font-size: 20px;
+}
 div.wrapper {
   display: flex;
-  row-gap: 10px;
-  column-gap: 0px;
+  flex-direction: row;
+  row-gap: 5px;
   background: none;
   margin-top: 70px;
   justify-content: center;
-  grid-template-rows: auto;
   flex-wrap: wrap;
   align-items: baseline;
 }

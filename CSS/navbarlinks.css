@@ -1,8 +1,8 @@
 .navbar {
-  display: grid;
-  grid-template-columns: 620px 1000px;
-  grid-template-rows: 150px;
-  grid-template-areas: "bl bl bl bl lt lt lt lt";
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+
   align-content: center;
   justify-content: space-between;
   border-bottom: 1.5px solid #e1e1e1;
