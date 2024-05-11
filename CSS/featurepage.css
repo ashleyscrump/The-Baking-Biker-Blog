@@ -1,3 +1,4 @@
+@import url(./navbarlinks.css);
 .container {
         display: grid;
         width: 90%;
@@ -6,8 +7,9 @@
         text-align: center;
         font-size: larger;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 250px 510px 110px;
+        grid-template-rows: 125px 150px 670px;
         grid-template-areas:
+          "nb nb"
           "hd hd"
           "sb ct"
           "ft ft";
@@ -18,12 +20,31 @@
     border: 1px solid red;
     background: rgba(243, 244, 242, 0.936);
 }
+.navbar{
+    grid-area: nb;
+    width: 90%;
+  }
+  .navbar ul {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .navbar h1{
+    font-size: 25px;
+    color: rgb(22, 21, 21);
+  }
+ .buttonshadowred{
+    min-width:70px;
+    height:15px;
+ } 
+
 .header{
     grid-area: hd;
+    width:100%;
     border: none;
+    margin-top: 35px;
     background: none;
     color: #dc1b1b;
-    font-size: 65px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace
 }
@@ -31,6 +52,9 @@
     grid-area: sb;
     border: none;
     background: none;
+}
+.sidebar p{
+  line-height: 30px;
 }
 .content {
     grid-area: ct;
@@ -52,18 +76,146 @@
 .footer ul{
     display: flex;
     list-style: none;
-    font-size: large;
-    gap: 25px;
+    font-size: 12px;
+    gap: 12px;
     justify-content:center;
     align-items:center;
     height: 100px;
 }
 .footer img{
-    width: 40px;
-    height:40px;
+    width: 30px;
+    height:30px;
 }
 img {
-    height: 400px;
-    width: 430px;
-    border-radius: 25px
+    height: 350px;
+    width: 400px;
+    border-radius: 75px
 }
+.wrap {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add some margin to create space for the text */
+}
+/*IF Smaller screen*/
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: #dad717;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      font-size: 12px;
+    }
+    .container p{
+        line-height: 20px;
+        height: auto;
+        /*padding: 5px;*/
+        margin: auto;
+      }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      width:85%;
+      grid-area: nb;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 100px;
+      padding: 0%;
+      margin-top: 0px;
+      font-size: 15px;
+      list-style: none;
+      align-items: center;
+    }
+    .navbar a{
+      font-size: 12px;
+    }
+    .navbar h1{
+   font-size: 18px;
+   margin: 10px;
+    }
+   .navbar img{
+    display:none;
+   } 
+   .buttonshadowred{
+    min-width: 80px;
+    height: 18px;
+   }
+    .box {
+      border: 1px solid red;
+      background: rgba(243, 244, 242, 0.936);
+    }
+    .header {
+      grid-area: hd;
+      border: none;
+      width: 90%;
+      background: none;
+      color: #dc1b1b;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .header h1{
+        font-size: 20px;
+        margin:auto;
+    }
+    .sidebar {
+      grid-area: sb;
+      width: 90%;
+      border: none;
+      background: none;
+    }
+    .content {
+      grid-area: ct;
+      width: 90%;
+      border: none;
+      color: #dc1b1b;
+      margin: 0px 0px;
+      border: none;
+      background: none;
+    }
+    .content h2 {
+      color: black;
+    }
+    .footer {
+      grid-area: ft;
+      width: 90%;
+      border: none;
+      background: none;
+    }
+    .footer ul {
+      display: flex;
+      list-style: none;
+      font-size: 12px;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer img {
+      width: 20px;
+      height: 20px;
+    }
+    img {
+      height: 200px;
+      max-width: 100%;
+      margin-bottom: 10px;
+      border-radius: 25px;
+      box-shadow: 5px 5px 5px #100f0f;    }
+  }
+  
+  /* If larger screen*/
+  @media only and (min-width: 769) and (max-width: 1024px) {
+  }
+  

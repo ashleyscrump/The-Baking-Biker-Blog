@@ -1,79 +1,224 @@
-@import url(./aboutscreensizestyle.css);
-body {
-    background-color: #f0d1df;
-    height: 100vh;
-    margin: 5px;
-    padding: 5px;
-  }
+@import url(./navbarlinks.css);
 .container {
-    display: grid;
-    border: none;
-    background: none;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 120px 535px 100px;
-    grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
-      "feat feat feat feat feat feat feat feat"
-      "ft ft ft ft ft ft ft ft";
+        display: grid;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+        font-size: larger;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 125px 150px 670px;
+        grid-template-areas:
+          "nb nb"
+          "hd hd"
+          "sb sb"
+          "ft ft";
+
+}
+
+.box {
+    border: 1px solid red;
+    background: rgba(243, 244, 242, 0.936);
+}
+.navbar{
+    grid-area: nb;
+    width: 90%;
   }
-  
-  .box {
-    border: 1px solid rgb(24, 24, 24);
-    background: rgb(238, 228, 235);
+  .navbar ul {
+    font-size: 12px;
+    gap: 5px;
   }
-  .header {
+  .navbar h1{
+    font-size: 25px;
+    color: rgb(22, 21, 21);
+  }
+ .buttonshadowred{
+    min-width:70px;
+    height:15px;
+ } 
+
+.header{
     grid-area: hd;
-    font-size: 70px;
-  font-family: "Courier New", Courier, monospace;
-  color: #dc1b1b;
-  border:none;
-  background: none;
-  }
-  .feature {
-    grid-area: feat;
-    padding: 10px;
+    width:100%;
     border: none;
-    font-size: 20px;
-    line-height: 30px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-.wrap {
-    float: left; /* Float the image to the left */
-    margin-right: 20px; /* Add some margin to create space for the text */
-  }
-.container p{
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  .footer {
-    grid-area: ft;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 45px;
+    margin-top: 35px;
     background: none;
-    border: none;
-  }
-  .footer-header {
-    font-style: italic;
+    color: #dc1b1b;
+    font-size: 30px;
     font-weight: bold;
-    margin-top: 40px;
-    color: rgb(16, 15, 15);
-    font-size: 35px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .footer ul {
+    font-family: 'Courier New', Courier, monospace
+}
+.sidebar {
+    grid-area: sb;
+    border: none;
+    background: none;
+}
+
+blockquote{
+  line-height: 30px;
+  color: #171717;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content {
+    grid-area: ct;
+    border: none;
+    color: #dc1b1b;
+    margin: 19.2px 10px;
+    border: none;
+    background: none;
+}
+.content h2{
+    color:black;
+   
+}
+.footer{
+    grid-area: ft;
+    border: none;
+    background: none;
+}
+.footer ul{
     display: flex;
     list-style: none;
-    font-size: large;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
+    font-size: 12px;
+    gap: 12px;
+    justify-content:center;
+    align-items:center;
     height: 100px;
-  }
-  .footer img {
-    width: 40px;
-    height: 40px;
+}
+.footer img{
+    width: 30px;
+    height:30px;
+}
+img {
+    height: 350px;
+    width: 400px;
+    border-radius: 75px
+}
+.wrap {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add some margin to create space for the text */
+}
+/*IF Smaller screen*/
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: #dad717;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      font-size: 12px;
+    }
+    .container p{
+        line-height: 20px;
+        height: auto;
+        /*padding: 5px;*/
+        margin: auto;
+      }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      width:85%;
+      grid-area: nb;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 100px;
+      padding: 0%;
+      margin-top: 0px;
+      font-size: 15px;
+      list-style: none;
+      align-items: center;
+    }
+    .navbar a{
+      font-size: 12px;
+    }
+    .navbar h1{
+   font-size: 18px;
+   margin: 10px;
+    }
+   .navbar img{
+    display:none;
+   } 
+   .buttonshadowred{
+    min-width: 80px;
+    height: 18px;
+   }
+    .box {
+      border: 1px solid red;
+      background: rgba(243, 244, 242, 0.936);
+    }
+    .header {
+      grid-area: hd;
+      border: none;
+      width: 90%;
+      background: none;
+      color: #dc1b1b;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .header h1{
+        font-size: 20px;
+        margin:auto;
+    }
+    .sidebar {
+      grid-area: sb;
+      width: 90%;
+      border: none;
+      background: none;
+    }
+    .content {
+      grid-area: ct;
+      width: 90%;
+      border: none;
+      color: #dc1b1b;
+      margin: 0px 0px;
+      border: none;
+      background: none;
+    }
+    .content h2 {
+      color: black;
+    }
+    .footer {
+      grid-area: ft;
+      width: 90%;
+      border: none;
+      background: none;
+    }
+    .footer ul {
+      display: flex;
+      list-style: none;
+      font-size: 12px;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer img {
+      width: 20px;
+      height: 20px;
+    }
+    img {
+      height: 200px;
+      max-width: 100%;
+      margin-bottom: 10px;
+      border-radius: 25px;
+      box-shadow: 5px 5px 5px #100f0f;    }
   }
   
- 
+  /* If larger screen*/
+  @media only and (min-width: 769) and (max-width: 1024px) {
+  }
+  

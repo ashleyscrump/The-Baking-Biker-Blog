@@ -1,9 +1,7 @@
 @import url(./navbarlinks.css);
-/*@import url(./stylescreensize.css);
-@import url(./aboutstyle.css);*/
 @import url(./aboutscreensizestyle.css);
-/*@import url(./featurepage.css);
-@import url(./signupstyle.css);*/
+@import url(./featurepage.css);
+@import url(./aboutstyle.css);
 
 body {
   background-color: #dad717;
@@ -19,16 +17,16 @@ body {
   margin: auto;
   margin-top: 100px;
   text-align: center;
-  font-size: larger;
+  font-size: large;
   grid-template-columns: auto;
   grid-template-rows: 100px 140px 600px 275px;
   grid-template-areas:
-  "nb nb"  
-  "hd hd"
-  "sb ct"
-  "ft ft";
+    "nb nb"
+    "hd hd"
+    "sb ct"
+    "ft ft";
 }
-.navbar{
+.navbar {
   grid-area: nb;
   width: 90%;
 }
@@ -42,13 +40,16 @@ body {
   grid-area: hd;
   border: none;
   background: none;
-  font-size: 40px;
+  font-size: 25px;
+}
+.header h1 {
+  font-size: 35px;
 }
 .sidebar {
   grid-area: sb;
   display: flex;
   flex-direction: column;
-  width:90%;
+  width: 90%;
   align-items: center;
   border: 2px solid rgb(15, 15, 152);
   padding: 15px;
@@ -63,9 +64,10 @@ body {
 }
 .feature {
   border: 5px dotted rgb(225, 223, 223);
-  width: 480px;
+  width: 330px;
   height: 56px;
-  font-size: 35px;
+  font-size: 25px;
+  color: #131313;
   font-family: "Courier New", Courier, monospace;
 }
 h3 {
@@ -127,10 +129,10 @@ h3 {
   height: 100px;
 }
 .footer img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
-.container p{
+.container p {
   font-size: 20px;
 }
 div.wrapper {
@@ -147,15 +149,16 @@ div.wrapper {
   background-color: #cdd2cc;
   border-radius: 15px;
   padding: 10px;
-  font-size: 110%;
+  width: 158px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
   margin-left: 10px;
 }
-.wrapper a {
+.wrapper a:hover {
   color: #dc1b1b;
 }
-.wrapper a:hover {
+.wrapper a: {
   color: #2b2626;
 }
 .a {

@@ -1,8 +1,10 @@
+@import url(./navbarlinks.css);
+
 body{
     background-color: #ccc;
 }
 .header h1{
-    font-size: 60px;
+    font-size: 40px;
     font-family: "Courier New", Courier, monospace;
     color: #dc1b1b;
 }
@@ -14,10 +16,12 @@ container {
 
 h2 {
     color: #333;
+    font-size: 18px;
 }
 
 form {
     margin-top: 20px;
+    
 }
 
 label {

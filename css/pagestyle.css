@@ -1,0 +1,119 @@
+/*IF Smaller screen*/
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #dad717;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 205px 80px 2px 441px;
+    grid-template-areas:
+      "nb nb"
+      "hd hd"
+      "sb sb"
+      "ct ct"
+      "ft ft";
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    grid-area: nb;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 35px 0px 0px 25px;
+    border: none;
+    padding: 0%;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0%;
+    margin-top: 0px;
+    height: 185px;
+    font-size: 15px;
+    list-style: none;
+    align-items: center;
+  }
+  .navbar a{
+    font-size: 12px;
+  }
+  .navbar h1{
+ font-size: 18px;
+ margin: 10px;
+  }
+ .navbar img{
+  display:none;
+ } 
+ .buttonshadowred{
+  min-width: 80px;
+  height: 18px;
+ }
+  .box {
+    border: 1px solid red;
+    background: rgba(243, 244, 242, 0.936);
+  }
+  .header {
+    grid-area: hd;
+    border: none;
+    background: none;
+    color: #dc1b1b;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .sidebar {
+    grid-area: sb;
+    border: none;
+    background: none;
+  }
+  .content {
+    grid-area: ct;
+    border: none;
+    color: #dc1b1b;
+    margin: 19.2px 10px;
+    border: none;
+    background: none;
+  }
+  .content h2 {
+    color: black;
+  }
+  .footer {
+    grid-area: ft;
+    border: none;
+    background: none;
+  }
+  .footer ul {
+    display: flex;
+    list-style: none;
+    font-size: large;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .footer img {
+    width: 40px;
+    height: 40px;
+  }
+  img {
+    height: 200px;
+    width: 230px;
+    border-radius: 25px;
+  }
+}
+
+/* If larger screen*/
+@media only and (min-width: 769) and (max-width: 1024px) {
+}
