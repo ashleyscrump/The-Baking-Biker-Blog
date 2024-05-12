@@ -1,57 +1,56 @@
 @import url(./navbarlinks.css);
 
-body{
-    background-color: #ccc;
+body {
+  background-color: #ccc;
 }
-.header h1{
-    font-size: 40px;
-    font-family: "Courier New", Courier, monospace;
-    color: #dc1b1b;
+.header h1 {
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  color: #dc1b1b;
 }
 container {
-    width: 50%;
-    margin: 50px auto;
-    text-align: center;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
 }
 
 h2 {
-    color: #333;
-    font-size: 18px;
+  color: #333;
+  font-size: 18px;
 }
 
 form {
-    margin-top: 20px;
-    
+  margin-top: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"] {
-    width: 20%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #dc1b1b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  background-color: #dc1b1b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-.footer{
-    margin-top: 20px;
+.footer {
+  margin-top: 20px;
 }

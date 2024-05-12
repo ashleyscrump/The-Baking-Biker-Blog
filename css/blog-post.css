@@ -1,6 +1,4 @@
 @import url(../css/navbarlinks.css);
-
-
 body {
   background-color: #dad717;
   height: 100vh;
@@ -11,45 +9,57 @@ body {
   display: grid;
   gap: 0px;
   width: 90%;
-  height: 90%;
-  margin: auto;
+  height: 100%;
   margin-top: 30px;
   text-align: center;
   font-size: 13px;
-  grid-template-columns: 250px 1050px;
+  grid-template-columns: 220px 1050px;
   grid-template-rows: 90px 320px 130px 150px;
   grid-template-areas:
-    "nb nb"
+    "sb nb"
     "sb mn"
     "sb ft";
 }
-
-
-/*.box {
-    border: 1px solid red;
-    background: rgba(243, 244, 242, 0.936);
-}*/
 .navbar{
     grid-area: nb;
-    width: 100%;
     width: 90%;
-  }
-  .navbar ul {
+    border: none; 
+}
+.navbar img{
+    width: 220px;
+    height: 195px;
+}
+.navbar ul {
     font-size: 12px;
     gap: 5px;
-  }
-  .navbar h1{
-    font-size: 25px;
-    color: rgb(22, 21, 21);
-  }
- .buttonshadowred{
+}
+.navbar h1{
+    font-size: 30px;
+    color: #dc1b1b;
+    margin-left: 20px;
+}
+.buttonshadowred {
     min-width:70px;
     height:15px;
- } 
-
-
+} 
+.profile-img {
+    border-radius: 100%;
+    border: 2px solid #08b0cd;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 4px black;
+}
+.bio {
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+    max-width: 768px;
+}
 .sidebar {
   grid-area: sb;
+  height: 128%;
   min-width: auto;
   display: flex;
   flex-direction: column;
@@ -58,30 +68,39 @@ body {
   border: 2px solid rgb(15, 15, 152);
   padding: 15px;
   margin: 0px;
-  /*box-shadow: 5px 5px 5px #100f0f;*/
   background: #08b0cd;
+  color: #131313;
 }
 .sidebar a:hover {
   background-color: #131313;
   font-weight: bold;
   color: #e9f2ec;
 }
-
-.sidebar li a {
+.sidebar ul {
   list-style: none;
-  border: 5px solid rgb(223, 223, 230);
-  padding: 2px;
-  margin: 5px;
-  width: 280px;
+  padding: 7px;
+  line-height: 55px;
+  font-size: 18px;
 }
 .main {
   grid-area: mn;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   width: max-content;
   width: 90%;
   background: none;
   border: hidden;
 }
-
+.main ul{
+    list-style: none;
+    font-size: 16px;
+}
+.main .bold{
+    font-weight: bold;
+    font-size: 15px;
+}
 .footer {
   grid-area: ft;
   width: 100%;
@@ -89,7 +108,8 @@ body {
   width: 90%;
   flex-direction: column;
   align-items: center;
-  margin-top: 45px;
+  margin-top: 250px;
+  justify-content: center;
   background: none;
   border: none;
 }
@@ -183,3 +203,99 @@ div.wrapper {
   width: 210px;
 }
 
+/*IF Smaller screen*/
+@media only screen and (max-width: 768px) {
+body {
+      background-color: #ccc;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+}
+.container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      font-size: 12px;
+}
+.navbar {
+      width: 90%;
+      grid-area: nb;
+      padding:0px;
+      height:90px
+      border: none;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+}
+.navbar ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 100px;
+      padding: 0%;
+      margin-top: 0px;
+      font-size: 15px;
+      list-style: none;
+      line-height: 5px;
+      align-items: center;
+}
+.navbar a{
+      font-size: 12px;
+}
+.navbar h1{
+   font-size: 20px;
+   margin: 10px;
+}
+.navbar img{
+    display:none;
+}  
+.main .profile-img{
+   margin: 10px 0px;
+}
+.sidebar {
+      grid-area: sb;
+      width: 90%;
+      border: none;
+      height:190px;
+      background: none;
+}
+.sidebar ul{
+        line-height: 40px;
+}
+.main {
+      grid-area: ct;
+      width: 90%;
+      border: none;
+      color: #2e2b2b;
+      margin: 18px 0px;
+      border: none;
+      background: none;
+      justify-content: center;
+      align-items: center;
+      line-height: 22px;
+}
+.main ul{
+    padding:0px;
+}   
+.footer {
+      grid-area: ft;
+      width: 90%;
+      border: none;
+      background: none;
+}
+.footer ul {
+      display: flex;
+      list-style: none;
+      font-size: 12px;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+}
+.footer img {
+      width: 20px;
+      height: 20px;
+}

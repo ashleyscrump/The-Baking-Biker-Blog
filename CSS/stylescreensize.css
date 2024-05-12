@@ -1,7 +1,6 @@
 /*IF Smaller screen*/
 @media only screen and (max-width: 768px) {
-  
-  body{
+  body {
     background-color: #dad717;
     height: auto;
     width: 100%;
@@ -11,7 +10,7 @@
   .navbar {
     display: flex;
     flex-direction: column;
-    width:90%;
+    width: 90%;
     grid-area: nb;
     justify-content: center;
     align-items: center;
@@ -31,37 +30,37 @@
     list-style: none;
     align-items: center;
   }
-  .navbar a{
+  .navbar a {
     font-size: 12px;
   }
-  .navbar h1{
- font-size: 18px;
- margin: 10px;
+  .navbar h1 {
+    font-size: 18px;
+    margin: 10px;
   }
- .navbar img{
-  display:none;
- } 
- .buttonshadowred{
-  min-width: 80px;
-  height: 18px;
- }
+  .navbar img {
+    display: none;
+  }
+  .buttonshadowred {
+    min-width: 80px;
+    height: 18px;
+  }
 
-.container {
-    display:grid;
+  .container {
+    display: grid;
     width: 90%;
-    grid-template-areas:  
-    "nb"
-    "hd"
-    "sb"
-    "ct"
-    "ft";
+    grid-template-areas:
+      "nb"
+      "hd"
+      "sb"
+      "ct"
+      "ft";
     grid-template-columns: 340px;
     grid-template-rows: 107px 115px 290px 530px 273px;
     margin-top: 50px;
     justify-content: center;
     align-items: center;
   }
-.feature {
+  .feature {
     width: 195px;
     height: 20px;
     font-size: 18px;
@@ -69,13 +68,13 @@
   }
   .header h1 {
     grid-area: hd;
-    width:100%;
+    width: 100%;
     grid-area: hd;
     font-size: 15px;
   }
   .content {
     grid-area: ct;
-    width:90%;
+    width: 90%;
     background: none;
   }
   .content img {
@@ -83,9 +82,9 @@
     width: 340px;
     margin: 0px;
   }
- h3{
-  font-size: 16px;
- }
+  h3 {
+    font-size: 16px;
+  }
   .sidebar {
     grid-area: sb;
     display: flex;
@@ -96,7 +95,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  .feature h3{
+  .feature h3 {
     font-size: 20px;
   }
   .sidebar a {
@@ -109,22 +108,22 @@
     height: 250px;
   }
   .footer {
-    margin:0%;
+    margin: 0%;
     background-color: none;
   }
-  
+
   .footer-header {
     color: #312d2d;
     font-size: 14px;
     margin-left: 20px;
   }
-  .footer ul{
-    gap:6px;
+  .footer ul {
+    gap: 6px;
     height: 25px;
     margin: 25px 0px 5px 0px;
     padding: 0%;
   }
-  div.wrapper{
+  div.wrapper {
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -143,14 +142,14 @@
   .wrapper a:hover {
     color: #2b2626;
   }
-.footer img {
+  .footer img {
     width: 25px;
     height: 25px;
-}
+  }
 }
 
 /* If larger screen*/
-@media only and (min-width: 769) and (max-width:1024px){
+@media only and (min-width: 769) and (max-width: 1024px) {
   .container {
     display: grid;
     width: 90%;

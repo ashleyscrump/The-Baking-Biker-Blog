@@ -26,7 +26,7 @@
   .navbar {
     display: flex;
     flex-direction: column;
-    width:90%;
+    width: 90%;
     grid-area: nb;
     justify-content: center;
     align-items: center;
@@ -46,20 +46,20 @@
     list-style: none;
     align-items: center;
   }
-  .navbar a{
+  .navbar a {
     font-size: 12px;
   }
-  .navbar h1{
- font-size: 18px;
- margin: 10px;
+  .navbar h1 {
+    font-size: 18px;
+    margin: 10px;
   }
- .navbar img{
-  display:none;
- } 
- .buttonshadowred{
-  min-width: 80px;
-  height: 18px;
- }
+  .navbar img {
+    display: none;
+  }
+  .buttonshadowred {
+    min-width: 80px;
+    height: 18px;
+  }
   .box {
     border: 1px solid red;
     background: rgba(243, 244, 242, 0.936);
